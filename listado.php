@@ -5,8 +5,19 @@
 	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>	
+	<script type="text/javascript">
+		  function verusuarios(){
+	   			$.post("class/listadousuario.php", function(d) {
+				  		console.log(d)
+				});
+ 	
+	   }
+	</script>
+
 </head>
 <body>
+
+<button type="button" class="btn btn-default" onclick="verusuarios()">Hola</button>
 
 <div class="bs-example" data-example-id="simple-table"> 
 	<table class="table"> 
